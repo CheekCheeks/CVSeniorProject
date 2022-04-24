@@ -5,12 +5,12 @@ import numpy as np
 
 
 # Video Capture
-capture = cv2.VideoCapture('resources/parking_lot_2.mp4')
+capture = cv2.VideoCapture('resources/parking_lot_1.mp4')
 
 with open('parking_positions', 'rb') as file:
             position_list = pickle.load(file)
 
-width, height = 45, 20
+width, height = 25, 50
 
 def check_parking_space(img_processed):
 
